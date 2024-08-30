@@ -1,4 +1,7 @@
+import About from "@/components/About/About";
+import Pricing from "@/components/Pricing/Pricing";
 import Spacing from "@/components/Spacing/Spacing";
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import HeroSection from "@/components/heroSection/HeroSection";
 import Sponsors from "@/components/sponsorSection/Sponsors";
@@ -9,8 +12,10 @@ export default function Home() {
     <main className="">
       <Header />
       <HeroSection />
-      <Spacing size="sm" />
       <Sponsors />
+      <About />
+      <Pricing />
+      <Footer />
     </main>
   );
 }
