@@ -67,4 +67,14 @@
     @apply bg-[#FFF] text-foreground;
     @apply text-black;
   }
+
+  .container {
+    @apply w-full max-w-[1440px] px-[5%] mx-auto;
+  }
+
+  @media screen and (max-width: 1550px) {
+    .container {
+      @apply px-[5%] !important;
+    }
+  }
 }
