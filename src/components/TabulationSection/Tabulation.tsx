@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Subtitle from "../Subtitle/Subtitle";
+import { motion } from "framer-motion";
 
 type TabProps = {
   labels: string[];
@@ -30,18 +31,27 @@ const Tabulation = ({ labels, children }: TabProps) => {
           <div className="flex flex-col md:flex-row gap-4 text-lg">
             {labels.map((label, index) => (
               <div>
-                <button
-                  key={index}
+                <motion.button
                   onClick={() => setActiveTab(index)}
-                  className={`active p-2 ${
-                    activeTab === index
-                      ? "bg-[rgba(22,22,22,0.5)] text-white"
-                      : ""
-                  }`}
+                  className="active p-2"
+                  animate={{
+                    backgroundColor:
+                      activeTab === index
+                        ? "rgba(33,33,33,0.6)"
+                        : "transparent",
+                    color:
+                      activeTab === index ? "#fff" : "rgba(255,255,255,0.5)",
+                  }}
+                  transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 >
                   {label}
-                </button>
-                {activeTab == index && <hr className="active" />}
+                </motion.button>
+                {activeTab == index && (
+                  <motion.div
+                    layoutId="underline"
+                    className="h-[0.5px] bg-white"
+                  />
+                )}
               </div>
             ))}
           </div>

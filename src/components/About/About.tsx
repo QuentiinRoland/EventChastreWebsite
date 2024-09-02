@@ -19,8 +19,8 @@ const About = () => {
             </p>
           </div>
           <div className="flex flex-col gap-4 ">
-            <div className="flex flex-col md:flex-row">
-              <div className="flex flex-col border border-orange-400 border-solid p-2">
+            <div className="flex flex-col md:flex-row gap-2">
+              <div className="flex flex-col border border-gray-300 p-3 shadow-lg rounded-sm gap-2">
                 <Image
                   src="/About/PartyIcon.png"
                   alt=""
@@ -33,7 +33,7 @@ const About = () => {
                   atmosphère conviviale pour tous.
                 </p>
               </div>
-              <div className="flex flex-col border border-orange-400 border-solid p-2">
+              <div className="flex flex-col border border-gray-300 p-3 shadow-lg rounded-sm gap-2">
                 <Image
                   src="/About/ActivitéesIcon.png"
                   alt=""
