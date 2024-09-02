@@ -2,12 +2,17 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Layout } from "@/layout/layout";
+import LogoChastre from "../../../public/Footer/Logochastre.png";
+import IconLocation from "../../../public/Footer/IconLocation.png";
+import IconPhone from "../../../public/Footer/call.png";
+import IconMail from "../../../public/Footer/mail.png";
+
 const Footer = () => {
   return (
     <div className="bg-black text-gray-300 p-8 gap-6 ">
       <Layout className="flex-col md:flex md:flex-row">
         <div className="text-sm flex flex-col flex-1 gap-y-4 mb-4 md:w-[30%]">
-          <Image src="" alt="" width={40} height={40} />
+          <Image src={LogoChastre} alt="" width={70} height={70} />
           <p>
             Diversifiez vos canaux d'acquisition Multipliez vos sources de
             prospection Développez votre business avec agilité
@@ -50,9 +55,20 @@ const Footer = () => {
         <div className="flex flex-col flex-1 gap-y-2 md:w-[40%]">
           <h3 className="text-xl text-[#FE8C5F]">Contact</h3>
           <p className="text-sm md:text-md">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A alias
-            dolorum necessitatibus fuga consectetur ab excepturi natus eius
-            optio quo.
+            <ul className="flex flex-col gap-2">
+              <div className="flex items-center gap-2">
+                <Image src={IconLocation} alt="" width={30} height={30} />
+                <li>Rue des Quinzes Bonniers 105 à 1450 Chastre</li>
+              </div>
+              <div className="flex items-center gap-2">
+                <Image src={IconPhone} alt="" width={30} height={30} />
+                <li>0477/20.58.98</li>
+              </div>
+              <div className="flex items-center gap-2">
+                <Image src={IconMail} alt="" width={30} height={30} />
+                <li>mail@chastre.com</li>
+              </div>
+            </ul>
           </p>
         </div>
       </Layout>

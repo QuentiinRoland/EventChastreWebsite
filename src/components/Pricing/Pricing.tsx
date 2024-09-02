@@ -5,6 +5,7 @@ import Image from "next/image";
 import Button from "../Button/Button";
 import { Layout } from "@/layout/layout";
 import { motion, useMotionValue, useTransform } from "framer-motion";
+import Subtitle from "../Subtitle/Subtitle";
 
 const Pricing = () => {
   // Motion value pour suivre la position de la souris
@@ -28,15 +29,21 @@ const Pricing = () => {
   return (
     <div
       className="flex flex-col py-[50px] md:py-[100px] gap-4 bg-black text-white relative overflow-hidden"
-      onMouseMove={handleMouseMove} // Suivre la position de la souris
+      onMouseMove={handleMouseMove}
     >
-      <Layout>
+      <Layout className="flex flex-col gap-6">
         <div className="flex flex-col justify-center items-center gap-2">
-          <h2 className="text-2xl">Ticket</h2>
-          <p className="text-center max-w-[600px]">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
-            minima excepturi sint expedita et quidem saepe eligendi dolor
-            accusantium in.
+          <Subtitle>Soirée festive inoubliable</Subtitle>
+          <h2 className="text-2xl">Réservez votre place</h2>
+          <p className="text-center max-w-[700px]">
+            Rejoignez-nous pour une soirée exceptionnelle où la fête bat son
+            plein. Profitez de la musique live, de spectacles captivants, et
+            d'une ambiance chaleureuse. Que vous optiez pour l'entrée à la
+            soirée ou pour le combo dîner + soirée, préparez-vous à vivre une
+            expérience inoubliable en bonne compagnie. Ne manquez pas cette
+            occasion de célébrer et de vous amuser dans un cadre convivial et
+            festif. Commandez votre ticket dès maintenant et laissez la magie
+            opérer !
           </p>
         </div>
         <div className="flex flex-col md:flex-row gap-4 z-10">

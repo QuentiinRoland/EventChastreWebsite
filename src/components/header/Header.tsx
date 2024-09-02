@@ -15,25 +15,25 @@ const Header = () => {
         <div className="hidden md:block">
           <nav className="flex gap-8 text-sm">
             <Link
-              className="text-black/80 hover:text-white transition"
+              className="text-gray-800 hover:text-[#FF5E19] transition"
               rel="stylesheet"
               href=""
             >
-              About
+              A propos
             </Link>
             <Link
-              className="text-black/80 hover:text-white transition"
+              className="text-gray-800 hover:text-[#FF5E19] transition"
+              rel="stylesheet"
+              href=""
+            >
+              Programme
+            </Link>
+            <Link
+              className="text-gray-800 hover:text-[#FF5E19] transition"
               rel="stylesheet"
               href=""
             >
               Ticket
-            </Link>
-            <Link
-              className="text-black/80 hover:text-white transition"
-              rel="stylesheet"
-              href=""
-            >
-              Test
             </Link>
           </nav>
         </div>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Button from "../Button/Button";
 import { Layout } from "@/layout/layout";
+import Subtitle from "../Subtitle/Subtitle";
 
 const About = () => {
   return (
@@ -9,7 +10,7 @@ const About = () => {
       <div className="py-[50px] md:py-[100px] flex flex-col justify-center items-start md:items-center md:flex-row ">
         <div className="w-full md:w-1/2 flex flex-col gap-4">
           <div className="flex flex-col gap-2">
-            <h3>Une fête pour tous</h3>
+            <Subtitle>Une fête pour tous</Subtitle>
             <h2 className="text-2xl">Découvrez la magie de notre kermesse !</h2>
             <p>
               Notre kermesse annuelle est un moment de partage et de joie pour
@@ -54,9 +55,9 @@ const About = () => {
           <Image
             src="/About/AboutpictureEvent.jpg"
             alt=""
-            width={500}
-            height={500}
-            className="rounded-md shadow-md"
+            width={600}
+            height={600}
+            className="rounded-md shadow-lg"
           />
         </div>
       </div>

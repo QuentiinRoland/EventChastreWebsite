@@ -21,7 +21,7 @@ const Sponsors = () => {
             </div>
             <div className="md:w-1/5">
               <Image
-                src="/Sponsors/highSecurityLogo.png"
+                src="/Sponsors/logoPanda.svg"
                 alt=""
                 width={70}
                 height={50}
@@ -29,27 +29,22 @@ const Sponsors = () => {
             </div>
             <div className="md:w-1/5">
               <Image
-                src="/Sponsors/highSecurityLogo.png"
+                src="/Sponsors/payconiq.jpg"
                 alt=""
-                width={70}
+                width={80}
                 height={50}
               />
             </div>
             <div className="md:w-1/5">
               <Image
-                src="/Sponsors/highSecurityLogo.png"
+                src="/Sponsors/TWquizz.jpg"
                 alt=""
-                width={70}
+                width={80}
                 height={50}
               />
             </div>
             <div className="md:w-1/5">
-              <Image
-                src="/Sponsors/highSecurityLogo.png"
-                alt=""
-                width={70}
-                height={50}
-              />
+              <Image src="/Sponsors/o.c.s.png" alt="" width={80} height={50} />
             </div>
           </div>
         </div>
