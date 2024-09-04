@@ -1,9 +1,15 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import MenuIcon from "@/assets/icons8-menu-white.svg";
+import MenuIcon from "@/assets/icons8-menu.svg";
+import closeIcon from "../../../public/Header/closeIconWhite.png";
 import { Layout } from "@/layout/layout";
+
 const Header = () => {
+  const [toggle, setToggle] = useState(false);
+
   return (
     <Layout>
       <header className="flex justify-between py-4 items-center">
@@ -47,10 +53,45 @@ const Header = () => {
               </div>
               Contact
             </button>
-            <Image src={MenuIcon} alt="" className="md:hidden" />
+            <div className="md:hidden flex flex-center relative">
+              <Image
+                src={toggle ? closeIcon : MenuIcon}
+                alt="menu"
+                className="object-contain cursor-pointer z-50"
+                onClick={() => setToggle(!toggle)}
+                width={30}
+                height={30}
+              />
+            </div>
           </div>
         </div>
       </header>
+
+      <div
+        className={`fixed inset-0 bg-black bg-opacity-80 backdrop-blur-lg z-40 transform ${
+          toggle ? "translate-x-0" : "translate-x-full"
+        } transition-transform duration-300 ease-in-out md:hidden`}
+      >
+        <div className="p-6 w-[75%] h-full bg-black shadow-lg">
+          <ul className="flex flex-col space-y-6 text-white text-lg">
+            <li>
+              <a href="#" onClick={() => setToggle(false)}>
+                A propos
+              </a>
+            </li>
+            <li>
+              <a href="#" onClick={() => setToggle(false)}>
+                Programme
+              </a>
+            </li>
+            <li>
+              <a href="#" onClick={() => setToggle(false)}>
+                Ticket
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </Layout>
   );
 };

@@ -35,7 +35,7 @@ const Pricing = () => {
         <div className="flex flex-col justify-center items-center gap-2">
           <Subtitle>Soirée festive inoubliable</Subtitle>
           <h2 className="text-2xl">Réservez votre place</h2>
-          <p className="text-center max-w-[700px]">
+          <p className="text-center max-w-[900px]">
             Rejoignez-nous pour une soirée exceptionnelle où la fête bat son
             plein. Profitez de la musique live, de spectacles captivants, et
             d'une ambiance chaleureuse. Que vous optiez pour l'entrée à la
