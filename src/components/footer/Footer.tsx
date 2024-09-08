@@ -54,22 +54,20 @@ const Footer = () => {
         </div>
         <div className="flex flex-col flex-1 gap-y-2 md:w-[40%]">
           <h3 className="text-xl text-[#FE8C5F]">Contact</h3>
-          <p className="text-sm md:text-md">
-            <ul className="flex flex-col gap-2">
-              <div className="flex items-center gap-2">
-                <Image src={IconLocation} alt="" width={30} height={30} />
-                <li>Rue des Quinzes Bonniers 105 à 1450 Chastre</li>
-              </div>
-              <div className="flex items-center gap-2">
-                <Image src={IconPhone} alt="" width={30} height={30} />
-                <li>0477/20.58.98</li>
-              </div>
-              <div className="flex items-center gap-2">
-                <Image src={IconMail} alt="" width={30} height={30} />
-                <li>mail@chastre.com</li>
-              </div>
-            </ul>
-          </p>
+          <ul className="flex flex-col gap-2 text-sm md:text-md">
+            <li className="flex items-center gap-2">
+              <Image src={IconLocation} alt="" width={30} height={30} />
+              Rue des Quinzes Bonniers 105 à 1450 Chastre
+            </li>
+            <li className="flex items-center gap-2">
+              <Image src={IconPhone} alt="" width={30} height={30} />
+              0477/20.58.98
+            </li>
+            <li className="flex items-center gap-2">
+              <Image src={IconMail} alt="" width={30} height={30} />
+              mail@chastre.com
+            </li>
+          </ul>
         </div>
       </Layout>
     </div>

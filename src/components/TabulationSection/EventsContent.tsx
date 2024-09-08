@@ -6,7 +6,6 @@ import Button from "../Button/Button";
 const EventSection = (props: Event) => (
   <div className="flex flex-col md:flex-row gap-4 md:justify-center md:items-center">
     <div className="md:w-1/2 flex flex-col gap-2">
-      <p>Subtitle</p>
       <h3 className="text-xl text-white">{props.title}</h3>
       <p>{props.description}</p>
       <Button>{props.button}</Button>
