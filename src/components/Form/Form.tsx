@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { sendEmail } from "./emailService";
 import Button from "../Button/Button";
 import Subtitle from "../Subtitle/Subtitle";
-import Layout from "../../layout/Layout";
+import LayoutSection from "../Layout/Layout";
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -40,7 +40,7 @@ const Form = () => {
   };
 
   return (
-    <Layout id="form">
+    <LayoutSection id="form">
       <div className="flex flex-col md:flex-row py-[50px] md:py-[100px] gap-6">
         <div className="flex flex-col w-full md:w-2/3 gap-2 justify-center">
           <Subtitle>Réservez votre place maintenant !</Subtitle>
@@ -145,7 +145,7 @@ const Form = () => {
           </form>
         </div>
       </div>
-    </Layout>
+    </LayoutSection>
   );
 };
 

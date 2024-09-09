@@ -1,7 +1,10 @@
 import { cn } from "@/lib/utils";
 import { ComponentPropsWithoutRef } from "react";
 
-const Layout = ({ className, ...props }: ComponentPropsWithoutRef<"div">) => {
+const LayoutSection = ({
+  className,
+  ...props
+}: ComponentPropsWithoutRef<"div">) => {
   return (
     <div
       {...props}
@@ -10,4 +13,4 @@ const Layout = ({ className, ...props }: ComponentPropsWithoutRef<"div">) => {
   );
 };
 
-export default Layout;
+export default LayoutSection;

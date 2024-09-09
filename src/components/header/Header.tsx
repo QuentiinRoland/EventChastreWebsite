@@ -5,13 +5,13 @@ import Link from "next/link";
 import Image from "next/image";
 import MenuIcon from "@/assets/icons8-menu.svg";
 import closeIcon from "../../../public/Header/closeIconWhite.png";
-import Layout from "../../layout/Layout";
+import LayoutSection from "../Layout/Layout";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <Layout>
+    <LayoutSection>
       <header className="flex justify-between py-4 items-center">
         <div>
           <span className="border h-10 w-10 rounded-lg p-2 border-white/30 text-black ">
@@ -94,7 +94,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
-    </Layout>
+    </LayoutSection>
   );
 };
 

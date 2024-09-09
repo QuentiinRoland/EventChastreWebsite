@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
 import Button from "../Button/Button";
-import Layout from "../../layout/Layout";
+import LayoutSection from "../Layout/Layout";
 import Subtitle from "../Subtitle/Subtitle";
 import Link from "next/link";
 
 const About = () => {
   return (
-    <Layout id="about">
+    <LayoutSection id="about">
       <div className="py-[50px] md:py-[100px] flex flex-col justify-center items-start md:items-center md:flex-row ">
         <div className="w-full md:w-1/2 flex flex-col gap-4">
           <div className="flex flex-col gap-2">
@@ -64,7 +64,7 @@ const About = () => {
           />
         </div>
       </div>
-    </Layout>
+    </LayoutSection>
   );
 };
 

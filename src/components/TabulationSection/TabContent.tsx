@@ -3,7 +3,7 @@ import React from "react";
 import Tabulation from "./Tabulation";
 import { Events } from "./EventsArray";
 import EventSection from "./EventsContent";
-import Layout from "../../layout/Layout";
+import LayoutSection from "../Layout/Layout";
 
 const TabContent: React.FC = () => {
   const labels = Events.map(
@@ -15,7 +15,7 @@ const TabContent: React.FC = () => {
       className=" bg-black text-gray-300 py-[50px] md:py-[100px]"
       id="program"
     >
-      <Layout>
+      <LayoutSection>
         <Tabulation labels={labels}>
           {Events.map((event) => (
             <EventSection
@@ -31,7 +31,7 @@ const TabContent: React.FC = () => {
             />
           ))}
         </Tabulation>
-      </Layout>
+      </LayoutSection>
     </div>
   );
 };

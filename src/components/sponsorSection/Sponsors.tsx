@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import Layout from "../../layout/Layout";
+import LayoutSection from "../Layout/Layout";
 
 const Sponsors = () => {
   return (
-    <Layout>
+    <LayoutSection>
       <div className="w-full pt-[50px]">
         <div className="flex flex-col md:flex-row gap-8 md:items-center">
           <h2 className="text-black flex-1/3 text-lg font-medium">
@@ -49,7 +49,7 @@ const Sponsors = () => {
           </div>
         </div>
       </div>
-    </Layout>
+    </LayoutSection>
   );
 };
 

@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Button from "../Button/Button";
-import Layout from "../../layout/Layout";
+import LayoutSection from "../Layout/Layout";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import Subtitle from "../Subtitle/Subtitle";
 import Link from "next/link";
@@ -28,7 +28,7 @@ const Pricing = () => {
       className="flex flex-col py-[50px] md:py-[100px] gap-4 bg-black text-white relative overflow-hidden"
       onMouseMove={handleMouseMove}
     >
-      <Layout className="flex flex-col gap-6" id="pricing">
+      <LayoutSection className="flex flex-col gap-6" id="pricing">
         <div className="flex flex-col justify-center items-center gap-2">
           <Subtitle>Soirée festive inoubliable</Subtitle>
           <h2 className="text-2xl">Réservez votre place</h2>
@@ -248,7 +248,7 @@ const Pricing = () => {
           className="absolute w-[300px] h-[150px] rounded-full blur-3xl bg-[#FF5E19] bottom-[30px] right-[0px] opacity-50"
           style={{ x: translateX, y: translateY }}
         ></motion.div>
-      </Layout>
+      </LayoutSection>
     </div>
   );
 };

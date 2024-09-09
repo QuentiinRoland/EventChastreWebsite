@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Layout from "../../layout/Layout";
+import LayoutSection from "../Layout/Layout";
 import LogoChastre from "../../../public/Footer/Logochastre.png";
 import IconLocation from "../../../public/Footer/IconLocation.png";
 import IconPhone from "../../../public/Footer/call.png";
@@ -10,7 +10,7 @@ import IconMail from "../../../public/Footer/mail.png";
 const Footer = () => {
   return (
     <div className="bg-black text-gray-300 p-8 gap-6 ">
-      <Layout className="flex-col md:flex md:flex-row">
+      <LayoutSection className="flex-col md:flex md:flex-row">
         <div className="text-sm flex flex-col flex-1 gap-y-4 mb-4 md:w-[30%]">
           <Image src={LogoChastre} alt="" width={70} height={70} />
           <p>
@@ -69,7 +69,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-      </Layout>
+      </LayoutSection>
     </div>
   );
 };

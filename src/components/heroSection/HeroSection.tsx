@@ -5,7 +5,7 @@ import React from "react";
 import { useState } from "react";
 import Subtitle from "../Subtitle/Subtitle";
 import Button from "../Button/Button";
-import Layout from "../../layout/Layout";
+import LayoutSection from "../Layout/Layout";
 import { motion } from "framer-motion";
 import Brush from "../../../public/herosection/brushwawe-gradient.png";
 import Link from "next/link";
@@ -34,7 +34,7 @@ const HeroSection = () => {
         objectPosition="center" // Centre l'image
         priority={true}
       />
-      <Layout>
+      <LayoutSection>
         <div className="absolute inset-0 bg-black opacity-70"></div>
         <div className="relative z-10 py-[50px] md:py-[100px] flex justify-center items-center h-full">
           <div className="flex w-full items-center">
@@ -129,7 +129,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-      </Layout>
+      </LayoutSection>
     </div>
   );
 };
