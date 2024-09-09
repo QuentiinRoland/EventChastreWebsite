@@ -121,7 +121,7 @@ const Pricing = () => {
               <Image src="/Pricing/tractor.png" alt="" width={40} height={40} />
             </div>
             <h3 className="text-2xl text-white">Tracteurs + Dîner</h3>
-            <span className="text-xl text-white">Prix : 15€</span>
+            <span className="text-xl text-white">Prix : 5€</span>
             <p>
               Profitez d'une journée dédiée aux amateurs de tracteurs, suivie
               d'un délicieux repas convivial. Une occasion unique de partager un
