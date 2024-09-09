@@ -105,7 +105,7 @@ const HeroSection = () => {
                   >
                     {" "}
                     <Image
-                      src="/heroSection/arrowIconRight.png"
+                      src="/herosection/arrowIconRight.png"
                       alt=""
                       width={30}
                       height={30}
@@ -118,7 +118,7 @@ const HeroSection = () => {
                     }}
                   >
                     <Image
-                      src="/heroSection/arrowIconLeft.png"
+                      src="/herosection/arrowIconLeft.png"
                       alt=""
                       width={30}
                       height={30}

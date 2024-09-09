@@ -11,7 +11,7 @@ const Tabulation = ({ labels, children }: TabProps) => {
   const [activeTab, setActiveTab] = useState<number>(0);
   return (
     <div className="flex flex-col md:flex-row gap-12">
-      <div className="w-1/3 flex flex-col justify-center gap-4">
+      <div className="w-full md:w-1/3 flex flex-col justify-center gap-4">
         <Subtitle>Programme</Subtitle>
         <h2 className="text-2xl text-white">
           Kermesses de Chastre 2024 : Un Week-End de Fêtes et de Traditions
@@ -26,7 +26,7 @@ const Tabulation = ({ labels, children }: TabProps) => {
 
       <div className="hidden md:block w-px bg-gray-400"></div>
 
-      <div className="w-2/3">
+      <div className="w-full md:w-2/3">
         <div className="flex flex-col gap-2">
           <div className="flex flex-col md:flex-row gap-4 text-lg">
             {labels.map((label, index) => (
