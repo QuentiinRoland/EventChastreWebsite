@@ -30,7 +30,7 @@ const Tabulation = ({ labels, children }: TabProps) => {
         <div className="flex flex-col gap-2">
           <div className="flex flex-col md:flex-row gap-4 text-lg">
             {labels.map((label, index) => (
-              <div>
+              <div key={index}>
                 <motion.button
                   onClick={() => setActiveTab(index)}
                   className="active p-2"
