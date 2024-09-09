@@ -119,14 +119,14 @@ const Pricing = () => {
               className="rounded-full bg-[#202122] p-2 w-12 border-[0.5px] border-[#59595A]"
               style={{ boxShadow: "inset 0 2px 4px rgba(255, 255,255, 0.1)" }}
             >
-              <Image src="/Pricing/food.png" alt="" width={40} height={40} />
+              <Image src="/Pricing/tractor.png" alt="" width={40} height={40} />
             </div>
-            <h3 className="text-2xl text-white">Dîner + Soirée</h3>
+            <h3 className="text-2xl text-white">Tracteurs + Dîner</h3>
             <span className="text-xl text-white">Prix : 15€</span>
             <p>
-              Profitez d'une expérience complète : un délicieux dîner suivi de
-              notre soirée festive. Un combo parfait pour une soirée sans souci,
-              où tout est prévu pour vous divertir.
+              Profitez d'une journée dédiée aux amateurs de tracteurs, suivie
+              d'un délicieux repas convivial. Une occasion unique de partager un
+              moment authentique autour d'un barbecue.
             </p>
             <Button>Commandez votre ticket !</Button>
             <hr className="bg-[#848484] border-0 h-[1px]" />
@@ -145,7 +145,7 @@ const Pricing = () => {
                     height={10}
                   />
                 </div>
-                Un repas complet
+                Accès à la concentration de tracteurs
               </li>
               <li className="text-white flex items-center gap-2">
                 <div
@@ -161,7 +161,64 @@ const Pricing = () => {
                     height={10}
                   />
                 </div>
-                Accès à la soirée festive
+                Repas : Barbecue 3 viandes et crudités + dessert
+              </li>
+              <li className="text-white flex items-center gap-2">
+                <div
+                  className="bg-[#464648] rounded-full w-5 h-5 flex items-center justify-center border border-[#818181]"
+                  style={{
+                    boxShadow: "inset 0 2px 4px rgba(255,255,255,0.2)",
+                  }}
+                >
+                  <Image
+                    src="/Pricing/checkIcon.png"
+                    alt=""
+                    width={15}
+                    height={10}
+                  />
+                </div>
+                20€ : par accompagnateurs
+              </li>
+            </ul>
+          </div>
+          <div className="bg-[#141516] px-6 py-12 border-[0.5px] border-[#59595A] rounded-md flex flex-col gap-4 text-gray-400">
+            <div
+              className="rounded-full bg-[#202122] p-2 w-12 border-[0.5px] border-[#59595A]"
+              style={{ boxShadow: "inset 0 2px 4px rgba(255, 255,255, 0.1)" }}
+            >
+              <Image
+                src="/Pricing/checklist.png"
+                alt=""
+                width={40}
+                height={40}
+              />
+            </div>
+            <h3 className="text-2xl text-white">Activités Générales</h3>
+            <span className="text-xl text-white">Prix : 5€</span>
+            <p>
+              Accédez à toutes les animations de la kermesse de Chastre, avec de
+              la musique en direct, des spectacles et une atmosphère festive
+              pour petits et grands.
+            </p>
+            <Button>Commandez votre ticket !</Button>
+            <hr className="bg-[#848484] border-0 h-[1px]" />
+            <ul className="flex flex-col gap-2">
+              fr
+              <li className="text-white flex items-center gap-2">
+                <div
+                  className="bg-[#464648] rounded-full w-5 h-5 flex items-center justify-center border border-[#818181]"
+                  style={{
+                    boxShadow: "inset 0 2px 4px rgba(255,255,255,0.2)",
+                  }}
+                >
+                  <Image
+                    src="/Pricing/checkIcon.png"
+                    alt=""
+                    width={15}
+                    height={10}
+                  />
+                </div>
+                Accès à une activitée au choix
               </li>
               <li className="text-white flex items-center gap-2">
                 <div

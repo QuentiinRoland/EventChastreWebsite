@@ -71,7 +71,18 @@ const Form = () => {
               <select className=" border border-gray-300 p-2 rounded-lg focus:outline-none focus:border-[#FE8C5F] focus:ring-1 focus:ring-[##FE8C5F]">
                 <option>Séléctionner votre entrée</option>
                 <option value="party">Soirée : 5€</option>
-                <option value="foodparty">Soirée + Diner : 15€</option>
+                <option value="tractor">Tracteurs + Dîner : 5€</option>
+                <option value="activity">Activitée : 5€</option>
+              </select>
+            </div>
+            <div className="flex flex-col gap-2">
+              <label>Activitée : </label>
+              <select className=" border border-gray-300 p-2 rounded-lg focus:outline-none focus:border-[#FE8C5F] focus:ring-1 focus:ring-[##FE8C5F]">
+                <option>Séléctionner votre activitée</option>
+                <option value="car">Exposition de voitures</option>
+                <option value="mobylette">Balade de Mobylette</option>
+                <option value="dance">Country Dance</option>
+                <option value="partynight">Soirée Années 80-2000</option>
               </select>
             </div>
             <button
