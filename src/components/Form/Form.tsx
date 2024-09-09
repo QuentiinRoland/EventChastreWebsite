@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { sendEmail } from "./emailService";
 import Button from "../Button/Button";
 import Subtitle from "../Subtitle/Subtitle";
-import { Layout } from "@/layout/layout";
+import { Layout } from "../../layout/Layout";
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -16,14 +16,14 @@ const Form = () => {
     activite: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
 
     sendEmail(formData)

@@ -1,17 +1,14 @@
 "use client";
 import React from "react";
 import Tabulation from "./Tabulation";
-import { Events } from "./EventsArray"; // Importez correctement les événements
+import { Events } from "./EventsArray";
 import EventSection from "./EventsContent";
-import { Layout } from "@/layout/layout";
+import { Layout } from "../../layout/Layout";
 
 const TabContent: React.FC = () => {
-  const labels = Events.map((event) => (
-    <div key={event.id}>
-      <span className="text-2xl">0{event.id}</span> / {event.day}{" "}
-      {event.dayNumber} {event.Month}
-    </div>
-  ));
+  const labels = Events.map(
+    (event) => `0${event.id} / ${event.day} ${event.dayNumber} ${event.Month}`
+  );
 
   return (
     <div

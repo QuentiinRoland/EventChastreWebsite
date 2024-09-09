@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Button from "../Button/Button";
-import { Layout } from "@/layout/layout";
+import { Layout } from "../../layout/Layout";
 import Subtitle from "../Subtitle/Subtitle";
 import Link from "next/link";
 
@@ -50,7 +50,7 @@ const About = () => {
               </div>
             </div>
             <Link href="#program">
-              <Button className>Envie de découvrir ?</Button>
+              <Button>Envie de découvrir ?</Button>
             </Link>
           </div>
         </div>

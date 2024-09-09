@@ -5,7 +5,7 @@ import React from "react";
 import { useState } from "react";
 import Subtitle from "../Subtitle/Subtitle";
 import Button from "../Button/Button";
-import { Layout } from "@/layout/layout";
+import { Layout } from "../../layout/Layout";
 import { motion } from "framer-motion";
 import Brush from "../../../public/herosection/brushwawe-gradient.png";
 import Link from "next/link";

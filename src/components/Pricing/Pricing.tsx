@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Button from "../Button/Button";
-import { Layout } from "@/layout/layout";
+import { Layout } from "../../layout/Layout";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import Subtitle from "../Subtitle/Subtitle";
 import Link from "next/link";
