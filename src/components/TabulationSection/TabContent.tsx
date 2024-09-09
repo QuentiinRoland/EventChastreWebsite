@@ -14,7 +14,10 @@ const TabContent: React.FC = () => {
   ));
 
   return (
-    <div className=" bg-black text-gray-300 py-[50px] md:py-[100px]">
+    <div
+      className=" bg-black text-gray-300 py-[50px] md:py-[100px]"
+      id="program"
+    >
       <Layout>
         <Tabulation labels={labels}>
           {Events.map((event) => (

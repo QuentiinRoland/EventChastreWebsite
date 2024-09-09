@@ -23,46 +23,48 @@ const Header = () => {
             <Link
               className="text-gray-800 hover:text-[#FF5E19] transition"
               rel="stylesheet"
-              href=""
+              href="#about"
             >
               A propos
             </Link>
             <Link
               className="text-gray-800 hover:text-[#FF5E19] transition"
               rel="stylesheet"
-              href=""
+              href="#program"
             >
               Programme
             </Link>
             <Link
               className="text-gray-800 hover:text-[#FF5E19] transition"
               rel="stylesheet"
-              href=""
+              href="#pricing"
             >
-              Ticket
+              Prix
             </Link>
           </nav>
         </div>
         <div>
           <div className="flex gap-2 text-center">
-            <button className="relative py-2 px-3 rounded-lg font-medium text-sm bg-gradient-to-b from-[#FE8C5F] to-[#FF5E19] shadow-[0px_0px_12px_#F57045] text-white">
-              <div className="absolute inset-0">
-                <div className="rounded-lg border border-white/20 absolute inset-0 [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
-                <div className="rounded-lg border absolute inset-0 border-white/40 [mask-image:linear-gradient(to_top,black,transparent)]"></div>
-                <div className="rounded-lg absolute inset-0 shadow-[0_0_10px_rgb(255,132,65,.7)_inset]"></div>
+            <Link href="#form">
+              <button className="relative py-2 px-3 rounded-lg font-medium text-sm bg-gradient-to-b from-[#FE8C5F] to-[#FF5E19] shadow-[0px_0px_12px_#F57045] text-white">
+                <div className="absolute inset-0">
+                  <div className="rounded-lg border border-white/20 absolute inset-0 [mask-image:linear-gradient(to_bottom,black,transparent)]"></div>
+                  <div className="rounded-lg border absolute inset-0 border-white/40 [mask-image:linear-gradient(to_top,black,transparent)]"></div>
+                  <div className="rounded-lg absolute inset-0 shadow-[0_0_10px_rgb(255,132,65,.7)_inset]"></div>
+                </div>
+                Commandez votre ticket
+              </button>
+              <div className="md:hidden flex flex-center relative">
+                <Image
+                  src={toggle ? closeIcon : MenuIcon}
+                  alt="menu"
+                  className="object-contain cursor-pointer z-50"
+                  onClick={() => setToggle(!toggle)}
+                  width={30}
+                  height={30}
+                />
               </div>
-              Contact
-            </button>
-            <div className="md:hidden flex flex-center relative">
-              <Image
-                src={toggle ? closeIcon : MenuIcon}
-                alt="menu"
-                className="object-contain cursor-pointer z-50"
-                onClick={() => setToggle(!toggle)}
-                width={30}
-                height={30}
-              />
-            </div>
+            </Link>
           </div>
         </div>
       </header>

@@ -6,22 +6,19 @@ import Button from "../Button/Button";
 import { Layout } from "@/layout/layout";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import Subtitle from "../Subtitle/Subtitle";
+import Link from "next/link";
 
 const Pricing = () => {
-  // Motion value pour suivre la position de la souris
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
-  // Transformation de la position de la souris en translation de l'élément
   const translateX = useTransform(mouseX, [0, 1], ["-40%", "40%"]);
   const translateY = useTransform(mouseY, [0, 1], ["-40%", "40%"]);
 
-  // Fonction pour mettre à jour la position de la souris
   const handleMouseMove = (event: any) => {
     const { clientX, clientY, currentTarget } = event;
     const { left, top, width, height } = currentTarget.getBoundingClientRect();
 
-    // Normalisation de la position de la souris
     mouseX.set((clientX - left) / width);
     mouseY.set((clientY - top) / height);
   };
@@ -31,7 +28,7 @@ const Pricing = () => {
       className="flex flex-col py-[50px] md:py-[100px] gap-4 bg-black text-white relative overflow-hidden"
       onMouseMove={handleMouseMove}
     >
-      <Layout className="flex flex-col gap-6">
+      <Layout className="flex flex-col gap-6" id="pricing">
         <div className="flex flex-col justify-center items-center gap-2">
           <Subtitle>Soirée festive inoubliable</Subtitle>
           <h2 className="text-2xl">Réservez votre place</h2>
@@ -61,7 +58,9 @@ const Pricing = () => {
               des spectacles et une atmosphère conviviale. C’est l’occasion
               parfaite de célébrer et de s’amuser en bonne compagnie.
             </p>
-            <Button>Commandez votre ticket !</Button>
+            <Link href="#form">
+              <Button>Commandez votre ticket !</Button>
+            </Link>
             <hr className="bg-[#848484] border-0 h-[1px]" />
             <ul className="flex flex-col gap-2">
               <li className="text-white flex items-center gap-2">
@@ -128,7 +127,9 @@ const Pricing = () => {
               d'un délicieux repas convivial. Une occasion unique de partager un
               moment authentique autour d'un barbecue.
             </p>
-            <Button>Commandez votre ticket !</Button>
+            <Link href="#form">
+              <Button>Commandez votre ticket !</Button>
+            </Link>
             <hr className="bg-[#848484] border-0 h-[1px]" />
             <ul className="flex flex-col gap-2">
               <li className="text-white flex items-center gap-2">
@@ -200,7 +201,9 @@ const Pricing = () => {
               la musique en direct, des spectacles et une atmosphère festive
               pour petits et grands.
             </p>
-            <Button>Commandez votre ticket !</Button>
+            <Link href="#form">
+              <Button>Commandez votre ticket !</Button>
+            </Link>
             <hr className="bg-[#848484] border-0 h-[1px]" />
             <ul className="flex flex-col gap-2">
               fr

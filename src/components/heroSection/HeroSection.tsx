@@ -8,6 +8,7 @@ import Button from "../Button/Button";
 import { Layout } from "@/layout/layout";
 import { motion } from "framer-motion";
 import Brush from "../../../public/herosection/brushwawe-gradient.png";
+import Link from "next/link";
 
 const HeroSection = () => {
   const [isFirstImageOnTop, setIsFirstImageOnTop] = useState(true);
@@ -66,7 +67,11 @@ const HeroSection = () => {
                   convivialité avec vos proches lors de notre kermesse annuelle
                   !
                 </p>
-                <Button className="max-w-[500px]">Achetez vos tickets !</Button>
+                <Link href="#pricing">
+                  <Button className="max-w-[500px]">
+                    Achetez vos tickets !
+                  </Button>
+                </Link>
               </div>
             </div>
             <div className="hidden md:flex justify-evenly gap-8 w-full md:w-1/2 mt-8 md:mt-0">
