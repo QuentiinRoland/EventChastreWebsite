@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { sendEmail } from "./EmailService";
+import { sendEmail } from "./emailService";
 import Button from "../Button/Button";
 import Subtitle from "../Subtitle/Subtitle";
 import { Layout } from "@/layout/layout";
