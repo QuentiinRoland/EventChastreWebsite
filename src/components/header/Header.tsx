@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import MenuIcon from "@/assets/icons8-menu.svg";
 import closeIcon from "../../../public/Header/closeIconWhite.png";
-import { Layout } from "../../layout/Layout";
+import Layout from "../../layout/Layout";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);

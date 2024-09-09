@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { sendEmail } from "./emailService";
 import Button from "../Button/Button";
 import Subtitle from "../Subtitle/Subtitle";
-import { Layout } from "../../layout/Layout";
+import Layout from "../../layout/Layout";
 
 const Form = () => {
   const [formData, setFormData] = useState({

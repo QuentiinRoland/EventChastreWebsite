@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { Layout } from "../../layout/Layout";
+import Layout from "../../layout/Layout";
 
 const Sponsors = () => {
   return (

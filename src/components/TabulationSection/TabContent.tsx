@@ -3,7 +3,7 @@ import React from "react";
 import Tabulation from "./Tabulation";
 import { Events } from "./EventsArray";
 import EventSection from "./EventsContent";
-import { Layout } from "../../layout/Layout";
+import Layout from "../../layout/Layout";
 
 const TabContent: React.FC = () => {
   const labels = Events.map(

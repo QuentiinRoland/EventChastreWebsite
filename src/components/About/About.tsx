@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Button from "../Button/Button";
-import { Layout } from "../../layout/Layout";
+import Layout from "../../layout/Layout";
 import Subtitle from "../Subtitle/Subtitle";
 import Link from "next/link";
 
